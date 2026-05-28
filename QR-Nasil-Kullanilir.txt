@@ -1,0 +1,19 @@
+﻿QR MENU YAYINLAMA (HIZLI REHBER)
+
+1) Siteyi internete ac
+- En kolay: Netlify Drop
+- Tarayicidan https://app.netlify.com/drop ac
+- C:\Users\mert.erman\Desktop\deslilas-qr-menu klasorunu surukle-birak
+- Saniyeler icinde bir public link alacaksin (ornek: https://deslilas-menu.netlify.app)
+
+2) QR olustur
+PowerShell ac ve su komutu calistir:
+
+powershell -ExecutionPolicy Bypass -File "C:\Users\mert.erman\Desktop\deslilas-qr-menu\make-qr.ps1" -Url "BURAYA_SITE_LINKIN" -OutFile "C:\Users\mert.erman\Desktop\deslilas-qr-menu\deslilas-qr.png"
+
+3) Yazdir / paylas
+- Olusan PNG dosyasini masa kartina, afise veya sosyal medyaya koy.
+- Musteri QR okutunca direkt menu acilir.
+
+Not:
+- Fiyat guncellersen sadece app.js dosyasini degistirip yeniden Netlify'a yuklemen yeterli.
