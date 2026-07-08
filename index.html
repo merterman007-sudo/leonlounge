@@ -1,67 +1,123 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#111827" />
-  <title>Mahalle Cafe QR Menü</title>
+  <meta name="theme-color" content="#100d0b" />
+  <meta
+    name="description"
+    content="Léon Lounge & Bar QR Menü. Espresso kahveler, serinleten içecekler, Red Bull karışımları, alkollü kokteyller ve biralar tek ekranda."
+  />
+  <title>Léon Lounge &amp; Bar | QR Menü</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-orb orb-1" aria-hidden="true"></div>
-  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="page-shell">
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
 
-  <div class="side-photo left" aria-hidden="true">
-    <img src="assets/salad.jpg" alt="" />
-  </div>
-  <div class="side-photo right" aria-hidden="true">
-    <img src="assets/pasta.jpg" alt="" />
-  </div>
+    <header class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Léon Lounge &amp; Bar</p>
+        <h1>QR Menü</h1>
+        <p class="hero-text">
+          Espresso kahvelerden imza kokteyllere uzanan akışkan, şık ve mobil odaklı menü deneyimi.
+        </p>
 
-  <header class="hero container">
-    <div class="brand-block">
-      <div class="brand-top">
-        <img class="brand-logo" src="assets/mahalle-logo.png" alt="Mahalle Cafe Logo" onerror="this.style.display='none'" />
-        <div>
-          <p class="kicker">MAHALLE CAFE</p>
-          <p class="brand-slogan">YENİ NESİL KAFE</p>
+        <div class="hero-badges">
+          <span>QR ile hızlı erişim</span>
+          <span>Sıcak / Soğuk aynı fiyat</span>
+          <span>Fiyatlar TL</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu-sections">Menüye Geç</a>
+          <a class="button button-secondary" href="#signature-board">İmza Seçimler</a>
         </div>
       </div>
-      <h1>MAHALLE QR MENU</h1>
-      <p class="hero-copy">Kahvaltıdan sıcak-soğuk içeceklere ve yemeklere kadar tüm ürünler tek ekranda.</p>
-      <div class="meta-row">
-        <span>08:00 - 01:00</span>
-        <span>Masaya Servis</span>
-        <span>Fiyatlara KDV Dahil</span>
-      </div>
-    </div>
 
-    <div class="hero-media">
-      <img src="assets/coffee.jpg" alt="Mahalle Cafe kahve sunumu" />
-      <div class="media-badge">Yeni Fiyat Listesi</div>
-    </div>
-  </header>
+      <aside class="hero-panel">
+        <div class="panel-topline">Lounge Selection</div>
+        <div class="hero-stat-grid">
+          <article class="hero-stat">
+            <strong id="stat-categories">0</strong>
+            <span>Kategori</span>
+          </article>
+          <article class="hero-stat">
+            <strong id="stat-items">0</strong>
+            <span>Çeşit</span>
+          </article>
+          <article class="hero-stat">
+            <strong>120 - 700 TL</strong>
+            <span>Fiyat Aralığı</span>
+          </article>
+        </div>
 
-  <section class="container category-showcase" aria-label="Kategori seçimi">
-    <div id="photo-category-grid" class="photo-category-grid"></div>
-  </section>
+        <div class="hero-note">
+          <p class="hero-note-label">Evden değil, atmosferden içilir.</p>
+          <p class="hero-note-text">
+            Frozen, Red Bull mixler ve kokteyller için seçimi kolaylaştıran düzenli bir akış hazırlandı.
+          </p>
+        </div>
+      </aside>
+    </header>
 
-  <main class="container main-grid">
-    <section id="menu-panel" class="content is-hidden">
-      <div class="toolbar glass">
-        <input id="search-input" type="search" placeholder="Ürün ara: latte, kola, makarna..." aria-label="Ürün ara" />
-        <button id="clear-btn" type="button">Temizle</button>
-      </div>
-      <div id="menu-root" class="menu-root"></div>
+    <section class="top-strip" aria-label="Bilgilendirme">
+      <p>Sıcak ve soğuk espresso bazlı kahvelerde fiyat farkı yoktur.</p>
+      <p>Arama alanını kullanarak ürün, aroma veya kokteyl adıyla filtreleme yapabilirsiniz.</p>
     </section>
-  </main>
 
-  <footer class="container footer">
-    <p>Mahalle Cafe Menü • Son güncelleme: Mayıs 2026</p>
-  </footer>
+    <nav class="sticky-nav" aria-label="Kategori navigasyonu">
+      <div id="category-nav" class="nav-scroll"></div>
+    </nav>
+
+    <section id="signature-board" class="signature-board" aria-labelledby="signature-title">
+      <div class="section-heading">
+        <p class="heading-kicker">Öne Çıkanlar</p>
+        <h2 id="signature-title">Léon İmza Seçimleri</h2>
+      </div>
+      <div id="featured-grid" class="featured-grid"></div>
+    </section>
+
+    <section class="discover-grid" aria-labelledby="discover-title">
+      <div class="section-heading">
+        <p class="heading-kicker">Kategori Akışı</p>
+        <h2 id="discover-title">Menü Bölümleri</h2>
+      </div>
+      <div id="section-cards" class="section-cards"></div>
+    </section>
+
+    <section class="filter-bar" aria-label="Menü filtreleri">
+      <label class="search-field" for="search-input">
+        <span>Menüde Ara</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Latte, çilek, mojito, Red Bull..."
+          autocomplete="off"
+        />
+      </label>
+      <button id="clear-btn" class="clear-button" type="button">Temizle</button>
+      <p id="results-summary" class="results-summary">Tüm ürünler listeleniyor.</p>
+    </section>
+
+    <main id="menu-sections" class="menu-sections" aria-live="polite"></main>
+
+    <div id="empty-state" class="empty-state is-hidden">
+      Aramana uygun ürün bulunamadı. Başka bir kelime deneyebilirsin.
+    </div>
+
+    <footer class="footer">
+      <p>Léon Lounge &amp; Bar QR Menü</p>
+      <p>Son güncelleme: 8 Temmuz 2026</p>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>

@@ -1,7 +1,7 @@
 ﻿param(
   [Parameter(Mandatory = $true)]
   [string]$Url,
-  [string]$OutFile = "menu-qr.png",
+  [string]$OutFile = "leon-lounge-qr.png",
   [int]$Size = 900
 )
 

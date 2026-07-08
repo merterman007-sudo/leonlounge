@@ -1,19 +1,18 @@
-﻿QR MENU YAYINLAMA (HIZLI REHBER)
+LEON LOUNGE QR MENU YAYINLAMA
 
-1) Siteyi internete ac
-- En kolay: Netlify Drop
-- Tarayicidan https://app.netlify.com/drop ac
-- C:\Users\mert.erman\Desktop\deslilas-qr-menu klasorunu surukle-birak
-- Saniyeler icinde bir public link alacaksin (ornek: https://deslilas-menu.netlify.app)
+1) GitHub Pages ile yayin
+- Proje `main` dalina push edildiginde GitHub Pages workflow'u devreye girer.
+- Varsayilan public adres:
+- https://merterman007-sudo.github.io/leonlounge/
 
 2) QR olustur
 PowerShell ac ve su komutu calistir:
 
-powershell -ExecutionPolicy Bypass -File "C:\Users\mert.erman\Desktop\deslilas-qr-menu\make-qr.ps1" -Url "BURAYA_SITE_LINKIN" -OutFile "C:\Users\mert.erman\Desktop\deslilas-qr-menu\deslilas-qr.png"
+powershell -ExecutionPolicy Bypass -File "C:\Users\mert.erman\Desktop\Freelance\Siteler\Leon Lounge\make-qr.ps1" -Url "https://merterman007-sudo.github.io/leonlounge/" -OutFile "C:\Users\mert.erman\Desktop\Freelance\Siteler\Leon Lounge\leon-lounge-qr.png"
 
-3) Yazdir / paylas
-- Olusan PNG dosyasini masa kartina, afise veya sosyal medyaya koy.
-- Musteri QR okutunca direkt menu acilir.
+3) Paylas
+- Olusan PNG dosyasini masa ustu kartta, afiste veya sosyal medya tanitimlarinda kullan.
+- Musteri QR okutunca menu dogrudan acilir.
 
 Not:
-- Fiyat guncellersen sadece app.js dosyasini degistirip yeniden Netlify'a yuklemen yeterli.
+- Fiyat veya urun guncellemesi icin `app.js` dosyasini degistirip tekrar push etmek yeterlidir.
