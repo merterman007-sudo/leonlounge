@@ -36,7 +36,7 @@ window.LEON_MENU = [
     shortTitle: 'Frozenlar',
     kicker: 'Fresh Menu',
     description: 'Milkshake, frozen ve frappe çeşitleri ile renkli ve ferah seçenekler.',
-    image: 'assets/dessert2.jpg',
+    image: 'assets/iced-coffee.jpg',
     accent: 'accent-fresh',
     imagePosition: 'center',
     highlights: ['Milkshake 300 TL', 'Frozen 300 TL', 'Frappe 300 TL'],
@@ -108,7 +108,7 @@ window.LEON_MENU = [
     description: 'Soft içecekler, su ve limonata çeşitleri tek bölümde.',
     image: 'assets/softdrinks.jpg',
     accent: 'accent-cold',
-    imagePosition: '20% center',
+    imagePosition: '35% center',
     highlights: ['Kola 150 TL', 'Limonata 220 TL', 'Aromalı Limonata 250 TL'],
     groups: [
       {
@@ -150,7 +150,7 @@ window.LEON_MENU = [
     description: 'Red Bull bazlı karışımlar ve Léon signature serileri.',
     image: 'assets/softdrinks.jpg',
     accent: 'accent-energy',
-    imagePosition: 'center',
+    imagePosition: 'left center',
     highlights: ['Red Bull Kokteyl 450 TL', 'Pink Sunset 450 TL', 'Galaxy 450 TL'],
     groups: [
       {
@@ -197,7 +197,7 @@ window.LEON_MENU = [
     description: 'Klasik kokteyller ve imza karışımlar bar menüsünde bir arada.',
     image: 'assets/softdrinks.jpg',
     accent: 'accent-cocktail',
-    imagePosition: 'center',
+    imagePosition: 'center center',
     highlights: ['Mojito 500 TL', 'Aperol Spritz 700 TL', 'Mathilda 550 TL'],
     groups: [
       {
@@ -233,7 +233,7 @@ window.LEON_MENU = [
     description: 'Şişe bira seçenekleri ve alkollü frozen aromaları.',
     image: 'assets/softdrinks.jpg',
     accent: 'accent-beer',
-    imagePosition: 'right center',
+    imagePosition: '75% center',
     highlights: ['Tuborg Gold 275 TL', 'Corona 325 TL', 'Alkollü Frozen 450 TL'],
     groups: [
       {
