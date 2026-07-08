@@ -34,11 +34,12 @@ window.LEON_MENU = [
     id: 'serinleten-lezzetler',
     title: 'Serinleten Lezzetler',
     shortTitle: 'Frozenlar',
-    kicker: 'Fresh Menu',
-    description: 'Milkshake, frozen ve frappe çeşitleri ile renkli ve ferah seçenekler.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Strawberry_milk_shake_%28cropped%29.jpg',
+    kicker: 'Fresh Selection',
+    description: 'Milkshake, frozen ve frappe çeşitleri ile canlı ve ferah seçenekler.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Strawberry_milk_shake_(cropped).jpg',
     accent: 'accent-fresh',
     imagePosition: 'center center',
+    notes: ['Milkshake, frozen ve frappe seçenekleri tek bölümde.'],
     highlights: ['Milkshake 300 TL', 'Frozen 300 TL', 'Frappe 300 TL'],
     groups: [
       {
@@ -89,6 +90,7 @@ window.LEON_MENU = [
       {
         title: 'Frappe',
         price: 300,
+        note: 'Daha kremamsı ve tatlı içim sevenler için.',
         layout: 'chips',
         items: [
           { name: 'Vanilya' },
@@ -106,9 +108,10 @@ window.LEON_MENU = [
     shortTitle: 'Meşrubatlar',
     kicker: 'Cold Selection',
     description: 'Soft içecekler, su ve limonata çeşitleri tek bölümde.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Lemonade_-_27682817724.jpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mint%20lemonade%20in%20summer.jpg',
     accent: 'accent-cold',
     imagePosition: 'center center',
+    notes: ['Klasik ve aromalı limonata seçenekleri mevcuttur.'],
     highlights: ['Kola 150 TL', 'Limonata 220 TL', 'Aromalı Limonata 250 TL'],
     groups: [
       {
@@ -146,11 +149,12 @@ window.LEON_MENU = [
     id: 'redbull-signature',
     title: 'Red Bull ve Signature Karışımlar',
     shortTitle: 'Red Bull',
-    kicker: 'Energy Drinks',
+    kicker: 'Energy Mixes',
     description: 'Red Bull bazlı karışımlar ve Léon signature serileri.',
-    image: 'assets/iced-coffee.jpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sea_of_Capri_(cocktail).jpg',
     accent: 'accent-energy',
     imagePosition: 'center center',
+    notes: ['Tüm Red Bull karışımları 450 TL.'],
     highlights: ['Red Bull Kokteyl 450 TL', 'Pink Sunset 450 TL', 'Galaxy 450 TL'],
     groups: [
       {
@@ -164,7 +168,7 @@ window.LEON_MENU = [
           { name: 'Peach' },
           { name: 'Passion' },
           { name: 'Strawberry' },
-          { name: 'Leon Special', note: 'Çilek ve mango' }
+          { name: 'Léon Special', note: 'Çilek ve mango' }
         ]
       },
       {
@@ -172,10 +176,10 @@ window.LEON_MENU = [
         price: 450,
         layout: 'chips',
         items: [
-          { name: 'Fresh Leon', note: 'Ananas ve limon' },
-          { name: 'Green Leon', note: 'Yeşil elma ve kivi' },
-          { name: 'Tropic Leon', note: 'Mango ve passion' },
-          { name: '50-50 Leon', note: 'Kavun ve limon' }
+          { name: 'Fresh Léon', note: 'Ananas ve limon' },
+          { name: 'Green Léon', note: 'Yeşil elma ve kivi' },
+          { name: 'Tropic Léon', note: 'Mango ve passion' },
+          { name: '50-50 Léon', note: 'Kavun ve limon' }
         ]
       },
       {
@@ -195,9 +199,10 @@ window.LEON_MENU = [
     shortTitle: 'Kokteyller',
     kicker: 'Cocktail Bar',
     description: 'Klasik kokteyller ve imza karışımlar bar menüsünde bir arada.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Margarita.jpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Margarita.jpg',
     accent: 'accent-cocktail',
     imagePosition: 'center center',
+    notes: ['Klasik ve signature kokteyller aynı bölümde listelenir.'],
     highlights: ['Mojito 500 TL', 'Aperol Spritz 700 TL', 'Mathilda 550 TL'],
     groups: [
       {
@@ -207,7 +212,7 @@ window.LEON_MENU = [
           { name: 'Mojito', price: 500 },
           { name: 'Margarita', price: 600 },
           { name: 'Long Island Ice Tea', price: 600 },
-          { name: 'Lincburg Lemonade', price: 600 },
+          { name: 'Lynchburg Lemonade', price: 600 },
           { name: 'Mimosa', price: 550 },
           { name: 'Cuba Libre', price: 500 },
           { name: 'Daiquiri', price: 500 },
@@ -231,9 +236,10 @@ window.LEON_MENU = [
     shortTitle: 'Biralar',
     kicker: 'Beer Corner',
     description: 'Şişe bira seçenekleri ve alkollü frozen aromaları.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Beer_in_glasses_and_steins.jpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beer_in_glasses_and_steins.jpg',
     accent: 'accent-beer',
     imagePosition: 'center center',
+    notes: ['Bira ve alkollü frozen serisi aynı kategoride sunulur.'],
     highlights: ['Tuborg Gold 275 TL', 'Corona 325 TL', 'Alkollü Frozen 450 TL'],
     groups: [
       {
@@ -248,6 +254,7 @@ window.LEON_MENU = [
       {
         title: 'Alkollü Frozen',
         price: 450,
+        note: 'Meyve aromalı buzlu alkol seçenekleri.',
         layout: 'chips',
         items: [
           { name: 'Çilek' },
@@ -267,9 +274,9 @@ window.LEON_MENU = [
 
 window.LEON_FEATURED = [
   {
-    title: 'Fresh Leon',
+    title: 'Fresh Léon',
     subtitle: 'Red Bull Special',
-    text: 'Ananas ve limon ile ferah, parlak ve hızlı bir seçim.',
+    text: 'Ananas ve limon ile ferah, parlak ve enerjik bir seçim.',
     price: 450,
     href: 'menu.html?cat=redbull-signature'
   },
@@ -283,7 +290,7 @@ window.LEON_FEATURED = [
   {
     title: 'Frozen Special',
     subtitle: 'Serinleten Lezzetler',
-    text: 'Çilek-muz ve mango-passion gibi ikili kombinler.',
+    text: 'Çilek-muz ve mango-passion gibi iki aromalı canlı kombinler.',
     price: 300,
     href: 'menu.html?cat=serinleten-lezzetler'
   }

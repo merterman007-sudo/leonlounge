@@ -26,7 +26,7 @@ function renderCategoryCards() {
         <a class="category-card ${category.accent}" href="menu.html?cat=${encodeURIComponent(category.id)}">
           <div class="category-image" style="background-image:url('${category.image}'); background-position:${category.imagePosition || 'center'};"></div>
           <div class="category-sheen" aria-hidden="true"></div>
-          <div class="category-overlay"></div>
+          <div class="category-overlay" aria-hidden="true"></div>
           <div class="category-copy">
             <div class="category-topline">
               <p>${category.kicker}</p>

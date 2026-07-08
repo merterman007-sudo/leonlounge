@@ -82,7 +82,7 @@ function renderHero(category) {
   heroEl.className = `hero hero-detail ${category.accent}`;
   heroEl.innerHTML = `
     <div class="hero-copy glass-panel">
-      <a class="back-link hero-back" href="index.html">Tum kategoriler</a>
+      <a class="back-link hero-back" href="index.html">Ana Menü</a>
       <p class="eyebrow">${category.kicker}</p>
       <h1>${category.title}</h1>
       <p class="hero-text">${category.description}</p>
@@ -169,8 +169,8 @@ function renderMenu(category, query = '') {
   const visibleCount = groups.reduce((total, group) => total + group.items.length, 0);
 
   resultsLabelEl.textContent = query.trim()
-    ? `${visibleCount} sonuç listeleniyor`
-    : `${getItemCount(category)} ürün listeleniyor`;
+    ? `${visibleCount} sonuç gösteriliyor`
+    : `${getItemCount(category)} ürün gösteriliyor`;
 
   emptyStateEl.classList.toggle('is-hidden', groups.length > 0);
   menuRootEl.innerHTML = groups.map((group) => renderGroup(group)).join('');
@@ -186,6 +186,7 @@ function renderRelated(activeCategory) {
           <div class="related-copy">
             <p>${category.kicker}</p>
             <h3>${category.title}</h3>
+            <span>${getItemCount(category)} ürün</span>
           </div>
         </a>
       `
