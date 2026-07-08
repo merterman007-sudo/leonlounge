@@ -22,17 +22,25 @@ function getPriceRange(category) {
 function renderCategoryCards() {
   categoryGridEl.innerHTML = menu
     .map(
-      (category) => `
+      (category, index) => `
         <a class="category-card ${category.accent}" href="menu.html?cat=${encodeURIComponent(category.id)}">
           <div class="category-image" style="background-image:url('${category.image}'); background-position:${category.imagePosition || 'center'};"></div>
+          <div class="category-sheen" aria-hidden="true"></div>
           <div class="category-overlay"></div>
           <div class="category-copy">
-            <p>${category.kicker}</p>
+            <div class="category-topline">
+              <p>${category.kicker}</p>
+              <span>${String(index + 1).padStart(2, '0')}</span>
+            </div>
             <h3>${category.title}</h3>
             <span>${category.description}</span>
             <div class="card-meta">
               <strong>${getItemCount(category)} ürün</strong>
               <strong>${getPriceRange(category)}</strong>
+            </div>
+            <div class="card-cta-row">
+              <em>Menüyü Aç</em>
+              <i aria-hidden="true">+</i>
             </div>
           </div>
         </a>
@@ -46,10 +54,15 @@ function renderFeatured() {
     .map(
       (item) => `
         <a class="featured-card" href="${item.href}">
-          <p>${item.subtitle}</p>
-          <h3>${item.title}</h3>
-          <span>${item.text}</span>
-          <strong>${formatPrice(item.price)}</strong>
+          <div class="featured-card-inner">
+            <p>${item.subtitle}</p>
+            <h3>${item.title}</h3>
+            <span>${item.text}</span>
+          </div>
+          <div class="featured-card-footer">
+            <strong>${formatPrice(item.price)}</strong>
+            <em>Detaya Git</em>
+          </div>
         </a>
       `
     )
