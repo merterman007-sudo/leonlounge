@@ -36,9 +36,9 @@ window.LEON_MENU = [
     shortTitle: 'Frozenlar',
     kicker: 'Fresh Menu',
     description: 'Milkshake, frozen ve frappe çeşitleri ile renkli ve ferah seçenekler.',
-    image: 'assets/iced-coffee.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Strawberry_milk_shake_%28cropped%29.jpg',
     accent: 'accent-fresh',
-    imagePosition: 'center',
+    imagePosition: 'center center',
     highlights: ['Milkshake 300 TL', 'Frozen 300 TL', 'Frappe 300 TL'],
     groups: [
       {
@@ -106,9 +106,9 @@ window.LEON_MENU = [
     shortTitle: 'Meşrubatlar',
     kicker: 'Cold Selection',
     description: 'Soft içecekler, su ve limonata çeşitleri tek bölümde.',
-    image: 'assets/softdrinks.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Lemonade_-_27682817724.jpg',
     accent: 'accent-cold',
-    imagePosition: '35% center',
+    imagePosition: 'center center',
     highlights: ['Kola 150 TL', 'Limonata 220 TL', 'Aromalı Limonata 250 TL'],
     groups: [
       {
@@ -148,9 +148,9 @@ window.LEON_MENU = [
     shortTitle: 'Red Bull',
     kicker: 'Energy Drinks',
     description: 'Red Bull bazlı karışımlar ve Léon signature serileri.',
-    image: 'assets/softdrinks.jpg',
+    image: 'assets/iced-coffee.jpg',
     accent: 'accent-energy',
-    imagePosition: 'left center',
+    imagePosition: 'center center',
     highlights: ['Red Bull Kokteyl 450 TL', 'Pink Sunset 450 TL', 'Galaxy 450 TL'],
     groups: [
       {
@@ -195,7 +195,7 @@ window.LEON_MENU = [
     shortTitle: 'Kokteyller',
     kicker: 'Cocktail Bar',
     description: 'Klasik kokteyller ve imza karışımlar bar menüsünde bir arada.',
-    image: 'assets/softdrinks.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Margarita.jpg',
     accent: 'accent-cocktail',
     imagePosition: 'center center',
     highlights: ['Mojito 500 TL', 'Aperol Spritz 700 TL', 'Mathilda 550 TL'],
@@ -231,9 +231,9 @@ window.LEON_MENU = [
     shortTitle: 'Biralar',
     kicker: 'Beer Corner',
     description: 'Şişe bira seçenekleri ve alkollü frozen aromaları.',
-    image: 'assets/softdrinks.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Beer_in_glasses_and_steins.jpg',
     accent: 'accent-beer',
-    imagePosition: '75% center',
+    imagePosition: 'center center',
     highlights: ['Tuborg Gold 275 TL', 'Corona 325 TL', 'Alkollü Frozen 450 TL'],
     groups: [
       {
