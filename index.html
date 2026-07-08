@@ -3,122 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#100d0b" />
+  <meta name="theme-color" content="#ff6a3d" />
   <meta
     name="description"
-    content="Léon Lounge & Bar QR Menü. Espresso kahveler, serinleten içecekler, Red Bull karışımları, alkollü kokteyller ve biralar tek ekranda."
+    content="Léon Lounge & Bar QR Menü. Kahveler, frozenlar, Red Bull karışımları, kokteyller ve biralar için fotoğraflı kategori menüsü."
   />
   <title>Léon Lounge &amp; Bar | QR Menü</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="home">
   <div class="page-shell">
-    <div class="ambient ambient-left" aria-hidden="true"></div>
-    <div class="ambient ambient-right" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
 
-    <header class="hero" id="top">
-      <div class="hero-copy">
+    <header class="hero hero-home">
+      <div class="hero-copy glass-panel">
         <p class="eyebrow">Léon Lounge &amp; Bar</p>
-        <h1>QR Menü</h1>
+        <h1>Canlı, fotoğraflı ve hızlı QR menü</h1>
         <p class="hero-text">
-          Espresso kahvelerden imza kokteyllere uzanan akışkan, şık ve mobil odaklı menü deneyimi.
+          Kategoriye dokun, doğrudan o menüye git. Espresso kahveler, frozenlar, Red Bull serisi,
+          alkollü kokteyller ve biralar tek akışta hazır.
         </p>
 
-        <div class="hero-badges">
-          <span>QR ile hızlı erişim</span>
-          <span>Sıcak / Soğuk aynı fiyat</span>
-          <span>Fiyatlar TL</span>
+        <div class="hero-actions">
+          <a class="cta cta-primary" href="menu.html?cat=alkollu-kokteyller">Kokteylleri Aç</a>
+          <a class="cta cta-secondary" href="#category-grid">Kategorilere Bak</a>
         </div>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#menu-sections">Menüye Geç</a>
-          <a class="button button-secondary" href="#signature-board">İmza Seçimler</a>
+        <div class="hero-chips">
+          <span>6 kategori</span>
+          <span>Hızlı geçiş</span>
+          <span>Mobil uyumlu</span>
         </div>
       </div>
 
-      <aside class="hero-panel">
-        <div class="panel-topline">Lounge Selection</div>
-        <div class="hero-stat-grid">
-          <article class="hero-stat">
-            <strong id="stat-categories">0</strong>
-            <span>Kategori</span>
-          </article>
-          <article class="hero-stat">
-            <strong id="stat-items">0</strong>
-            <span>Çeşit</span>
-          </article>
-          <article class="hero-stat">
-            <strong>120 - 700 TL</strong>
-            <span>Fiyat Aralığı</span>
-          </article>
-        </div>
-
-        <div class="hero-note">
-          <p class="hero-note-label">Evden değil, atmosferden içilir.</p>
-          <p class="hero-note-text">
-            Frozen, Red Bull mixler ve kokteyller için seçimi kolaylaştıran düzenli bir akış hazırlandı.
-          </p>
-        </div>
-      </aside>
+      <div class="hero-gallery">
+        <article class="hero-shot tall" style="--bg:url('assets/softdrinks.jpg')">
+          <div class="hero-shot-copy">
+            <p>Signature Drinks</p>
+            <strong>Bar menüsü önde</strong>
+          </div>
+        </article>
+        <article class="hero-shot" style="--bg:url('assets/coffee.jpg')">
+          <div class="hero-shot-copy">
+            <p>Espresso Bar</p>
+            <strong>Sıcak ve soğuk aynı fiyat</strong>
+          </div>
+        </article>
+        <article class="hero-shot" style="--bg:url('assets/dessert2.jpg')">
+          <div class="hero-shot-copy">
+            <p>Fresh Colors</p>
+            <strong>Frozen ve milkshake serisi</strong>
+          </div>
+        </article>
+      </div>
     </header>
 
-    <section class="top-strip" aria-label="Bilgilendirme">
-      <p>Sıcak ve soğuk espresso bazlı kahvelerde fiyat farkı yoktur.</p>
-      <p>Arama alanını kullanarak ürün, aroma veya kokteyl adıyla filtreleme yapabilirsiniz.</p>
+    <section class="quick-links glass-panel">
+      <a href="menu.html?cat=espresso-kahveler">Espresso Kahveler</a>
+      <a href="menu.html?cat=serinleten-lezzetler">Frozen &amp; Milkshake</a>
+      <a href="menu.html?cat=redbull-signature">Red Bull Karışımları</a>
+      <a href="menu.html?cat=alkollu-kokteyller">Alkollü Kokteyller</a>
+      <a href="menu.html?cat=biralar-frozen">Biralar</a>
     </section>
 
-    <nav class="sticky-nav" aria-label="Kategori navigasyonu">
-      <div id="category-nav" class="nav-scroll"></div>
-    </nav>
-
-    <section id="signature-board" class="signature-board" aria-labelledby="signature-title">
-      <div class="section-heading">
-        <p class="heading-kicker">Öne Çıkanlar</p>
-        <h2 id="signature-title">Léon İmza Seçimleri</h2>
+    <section class="home-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Kategori Menüsü</p>
+          <h2>Hangi bölümü açmak istiyorsun?</h2>
+        </div>
+        <p class="section-note">
+          Kartlardan birine dokunduğunda tek sayfada kalmaz, doğrudan o kategori detayına geçersin.
+        </p>
       </div>
-      <div id="featured-grid" class="featured-grid"></div>
+      <div id="category-grid" class="category-grid"></div>
     </section>
 
-    <section class="discover-grid" aria-labelledby="discover-title">
-      <div class="section-heading">
-        <p class="heading-kicker">Kategori Akışı</p>
-        <h2 id="discover-title">Menü Bölümleri</h2>
+    <section class="home-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Öne Çıkanlar</p>
+          <h2>Léon imza seçimleri</h2>
+        </div>
       </div>
-      <div id="section-cards" class="section-cards"></div>
+      <div id="featured-strip" class="featured-strip"></div>
     </section>
 
-    <section class="filter-bar" aria-label="Menü filtreleri">
-      <label class="search-field" for="search-input">
-        <span>Menüde Ara</span>
-        <input
-          id="search-input"
-          type="search"
-          placeholder="Latte, çilek, mojito, Red Bull..."
-          autocomplete="off"
-        />
-      </label>
-      <button id="clear-btn" class="clear-button" type="button">Temizle</button>
-      <p id="results-summary" class="results-summary">Tüm ürünler listeleniyor.</p>
-    </section>
-
-    <main id="menu-sections" class="menu-sections" aria-live="polite"></main>
-
-    <div id="empty-state" class="empty-state is-hidden">
-      Aramana uygun ürün bulunamadı. Başka bir kelime deneyebilirsin.
-    </div>
-
-    <footer class="footer">
+    <footer class="footer glass-panel">
       <p>Léon Lounge &amp; Bar QR Menü</p>
       <p>Son güncelleme: 8 Temmuz 2026</p>
     </footer>
   </div>
 
-  <script src="app.js"></script>
+  <script src="menu-data.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

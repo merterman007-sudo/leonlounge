@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff6a3d" />
+  <meta
+    name="description"
+    content="Léon Lounge & Bar kategori menüsü. Seçilen bölüm için detay ürün listesi, fiyatlar ve aroma seçenekleri."
+  />
+  <title>Léon Lounge &amp; Bar | Menü Detayı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="menu">
+  <div class="page-shell">
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header id="menu-hero" class="hero hero-detail"></header>
+
+    <nav class="category-nav glass-panel" aria-label="Kategori geçişleri">
+      <div id="category-nav-list" class="category-nav-list"></div>
+    </nav>
+
+    <section class="toolbar glass-panel">
+      <a class="back-link" href="index.html">Tum kategoriler</a>
+      <label class="search-box" for="search-input">
+        <span>Bu kategoride ara</span>
+        <input id="search-input" type="search" placeholder="Mojito, çilek, latte..." autocomplete="off" />
+      </label>
+      <button id="clear-btn" class="clear-btn" type="button">Temizle</button>
+    </section>
+
+    <section id="results-label" class="results-label">Tum ürünler listeleniyor.</section>
+
+    <main id="menu-root" class="menu-root"></main>
+
+    <div id="empty-state" class="empty-state is-hidden">
+      Bu kategoride aramana uygun ürün bulunamadı.
+    </div>
+
+    <section class="home-section related-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Diger Kategoriler</p>
+          <h2>Menude gezmeye devam et</h2>
+        </div>
+      </div>
+      <div id="related-grid" class="related-grid"></div>
+    </section>
+
+    <footer class="footer glass-panel">
+      <p>Léon Lounge &amp; Bar QR Menü</p>
+      <p>Fiyatlar TL cinsindendir</p>
+    </footer>
+  </div>
+
+  <script src="menu-data.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

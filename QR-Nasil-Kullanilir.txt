@@ -15,4 +15,4 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\mert.erman\Desktop\Freelance\
 - Musteri QR okutunca menu dogrudan acilir.
 
 Not:
-- Fiyat veya urun guncellemesi icin `app.js` dosyasini degistirip tekrar push etmek yeterlidir.
+- Fiyat veya urun guncellemesi icin `menu-data.js` dosyasini degistirip tekrar push etmek yeterlidir.
